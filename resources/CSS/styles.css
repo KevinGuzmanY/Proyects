@@ -1,0 +1,33 @@
+.divStyle{
+    text-align:center;
+    background-color: aquamarine;
+   
+    padding-bottom: 22px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+form{
+    text-align: center;
+    padding: 40px;
+}
+
+
+#tittle{
+    text-align: center;
+}    
+th,td{
+    border: 1px solid;
+    border-color: black;
+    padding-top: 5px;
+    padding-right: 10px;
+}   
+#divtable{
+    margin : 40px auto;
+    
+    
+    
+}

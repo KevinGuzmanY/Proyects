@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">   
+<title>Gastos</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="./resources/CSS/styles.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+    <h1 id="tittle">Gastos</h1>
+    <div class="row">
+    <div class="col l4 offset-l1 s12">
+    <form id="formTransaction">
+        <div id="divTipo" > 
+        <label >Tipo de Gasto</label>
+        <p>
+            <label>
+                <input value="Ingreso" class="with-gap" required name="typeS" type="radio" checked />
+                 <span>Ingreso</span>
+            </label>
+            <label>
+                <input value="Egreso" class="with-gap" required name="typeS" type="radio" checked />
+                 <span>Egreso</span>
+            </label>
+        </p>
+        
+        </div>
+        <div id="divMonto" class="input-field col s6">
+        <label for="inpMonto">Monto</label>
+        <input  required id="inpMonto" name="inpMonto" type="number">
+        </div>
+        <div id="divDesc" class="input-field col s6" >
+            <label  for="inpDescrip" >Descripción</label>
+            <input type="text" required id="inpDescrip" name="inpDescrip" type="text"><br>
+        </div>
+        <div id="divCategoria" name="divCategoria" >
+        <label  for="inpcateg">Categoria</label>
+        <select class="browser-default" required id="inpcateg" name="inpcateg" type="text">
+            <option >Comida</option>
+            <option >Diversión</option>
+        </select>
+        </div>
+        
+        <button class="btn waves-effect waves-light" type="submit" name="submitButton">Add
+            <i class="material-icons left">call_made</i>
+        </button>
+    </form>
+    </div>
+    
+    <div class="col l6 s12 offset-s2 " id="divtable">
+        <table id="tableOne" data-phone-number="4">
+            <tr>
+                <th>Tipo</th>
+                <th>Monto</th>
+                <th>Descripción</th>
+                <th>Categoria</th>
+                <th>Borrar</th>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script  
+    src="resources/JS/scripts.js">
+       
+    </script>
+</body>
+</html>
